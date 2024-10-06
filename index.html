@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Text">
+  <title>Milestone Project</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+
+<div class="main-container">
+  
+  <div>
+
+  <div class="container">
+
+  <h2>Desserts</h2>
+
+  <div class="row">
+
+  <div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-waffle-desktop.jpg" alt="image-waffle">
+  <p>Waffle with Berries</p>
+ <p> Waffle</p>
+ <p class="price" id="price"> 6.50</p>
+
+  </div>
+  <button id="addCart"  onclick="CartBtn('addCart',0,'qtyBtn', 'qty', 6.50 )">
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="" srcset="">
+    Add to Cart </button>
+
+  
+  <button class="qtyBtn" id="qtyBtn">
+    <span id="minus" onclick="acceptMinus('minus','qty',6.50,0,'addCart', 'qtyBtn')">-</span>
+        <span class="qty" id="qty">0</span>
+    <span id="Add"  onclick="acceptAdd('Add', 'qty',6.50, 0)">+</span>
+
+  </button>
+</div>
+
+
+<div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="image-waffle">
+  <p> Vanilla Bean Crème Brûlée</p>
+ <p> Crème Brûlée</p>
+ <p class="price"> 8.00</p>
+
+  </div>
+  <button id="addCart2"  onclick="CartBtn('addCart2',1,'qtyBtn2', 'qty2', 8.00 )"> 
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img"> 
+    Add to Cart </button>
+
+  
+  <button class="qtyBtn" id="qtyBtn2">
+    <span id="minus2" onclick="acceptMinus('minus2', 'qty2',8.00,1,'addCart2', 'qtyBtn2')">-</span>
+        <span class="qty" id="qty2">0</span>
+    <span id="Add2"  onclick="acceptAdd('Add2', 'qty2',  8.00, 1)">+</span>
+
+  </button>
+</div>
+
+
+
+
+
+<div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-tiramisu-desktop.jpg" alt="image-waffle">
+<p> Classic Tiramisu</p>
+ <p> Tiramisu</p>
+ <p class="price"> 5.50</p>
+
+  </div>
+  <button id="addCart3" onclick="CartBtn('addCart3',2,'qtyBtn3', 'qty3', 5.50 )"
+  > <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img">
+ 
+  Add to Cart </button>
+
+  <button class="qtyBtn" id="qtyBtn3">
+    <span id="minus3" onclick="acceptMinus('minus3', 'qty3',5.50,2,'addCart3', 'qtyBtn3')">-</span>
+        <span class="qty" id="qty3">0</span>
+    <span id="Add3"  onclick="acceptAdd('Add2', 'qty3',  5.50, 2)">+</span>
+
+  </button>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-baklava-desktop.jpg" alt="image-waffle">
+  <p>Pistachio Baklava</p>
+ <p> Baklava</p>
+ <p class="price"> 4.00</p>
+
+  </div>
+  <button id="addCart4" onclick="CartBtn('addCart4',3,'qtyBtn4', 'qty4', 4.00 )"> 
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img"> 
+     Add to Cart </button>
+
+     <button class="qtyBtn" id="qtyBtn4">
+      <span id="minus4" onclick="acceptMinus('minus4', 'qty4',4.00,3,'addCart4', 'qtyBtn4')">-</span>
+          <span class="qty" id="qty4">0</span>
+      <span id="Add4"  onclick="acceptAdd('Add4', 'qty4',  5.50, 3)">+</span>
+    
+    </button>
+</div>
+
+
+
+
+
+
+<div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-meringue-desktop.jpg" alt="image-waffle">
+  <p> Lemon Meringue Pie</p>
+ <p> Pie</p>
+ <p class="price"> 5.00</p>
+
+  </div>
+  <button id="addCart5" onclick="CartBtn('addCart5',4,'qtyBtn5', 'qty5', 5.00 )"> 
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img"> 
+     Add to Cart </button>
+
+     <button class="qtyBtn" id="qtyBtn5">
+      <span id="minus5" onclick="acceptMinus('minus5', 'qty5',5.00,4,'addCart5', 'qtyBtn5')">-</span>
+          <span class="qty" id="qty5">0</span>
+      <span id="Add5"  onclick="acceptAdd('Add5', 'qty5',  5.00, 4)">+</span>
+    
+    </button>
+</div>
+
+
+
+
+
+
+
+<div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-cake-desktop.jpg" alt="image-waffle">
+  <p>Red Velvet Cake</p>
+ <p> Cake</p>
+ <p class="price"> 4.50</p>
+
+  </div>
+  <button id="addCart6" onclick="CartBtn('addCart6',5,'qtyBtn6', 'qty6', 4.50 )"> 
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img"> 
+     Add to Cart </button>
+
+
+     <button class="qtyBtn" id="qtyBtn6">
+      <span id="minus6" onclick="acceptMinus('minus6', 'qty6',4.50,5,'addCart6', 'qtyBtn6')">-</span>
+          <span class="qty" id="qty6">0</span>
+      <span id="Add6"  onclick="acceptAdd('Add6', 'qty6',  4.50, 5)">+</span>
+    </button>
+</div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-baklava-desktop.jpg" alt="image-waffle">
+  <p>Salted Caramel Brownie</p>
+ <p> Brownie</p>
+ <p class="price"> 4.50</p>
+  </div>
+  <button id="addCart7" onclick="CartBtn('addCart7',6,'qtyBtn7', 'qty7', 4.50 )"> 
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img"> 
+     Add to Cart </button>
+
+
+     <button class="qtyBtn" id="qtyBtn7">
+      <span id="minus7" onclick="acceptMinus('minus7', 'qty7',4.50,6,'addCart7', 'qtyBtn7')">-</span>
+          <span class="qty" id="qty7">0</span>
+      <span id="Add7"  onclick="acceptAdd('Add7', 'qty7',  4.50, 6)">+</span>
+    </button>
+
+</div>
+
+
+
+
+
+<div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-macaron-desktop.jpg" alt="image-waffle">
+  <p> Macaron Mix of Five</p>
+ <p> Macaron</p>
+ <p class="price"> 8.00</p>
+
+  </div>
+  <button id="addCart8" onclick="CartBtn('addCart8',7,'qtyBtn8', 'qty8', 8.00 )"> 
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img"> 
+     Add to Cart </button>
+
+
+
+ <button class="qtyBtn" id="qtyBtn8">
+      <span id="minus8" onclick="acceptMinus('minus8', 'qty8',8.00,7,'addCart8', 'qtyBtn8')">-</span>
+          <span class="qty" id="qty8">0</span>
+      <span id="Add8"  onclick="acceptAdd('Add8', 'qty8',  8.00, 7)">+</span>
+    </button></div>
+
+
+
+
+
+<div class="mainItemDiv">  
+  <div class="item">
+    <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="image-waffle">
+  <p> Vanilla Panna Cotta</p>
+ <p>  Panna Cotta</p>
+ <p class="price"> 6.50</p>
+
+  </div>
+  <button id="addCart9" onclick="CartBtn('addCart9',8,'qtyBtn9', 'qty9', 6.50 )"> 
+    <img class="cartIcon" src="./assets/images/icon-add-to-cart.svg" alt="Add-to-cart-img"> 
+     Add to Cart </button>
+
+
+
+     <button class="qtyBtn" id="qtyBtn9">
+      <span id="minus9" onclick="acceptMinus('minus9', 'qty9',6.50,8,'addCart9', 'qtyBtn9')">-</span>
+          <span class="qty" id="qty9">0</span>
+      <span id="Add9"  onclick="acceptAdd('Add9', 'qty9',  6.50, 8)">+</span>
+    </button>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+<div id="mainwheelCart">
+
+  <h3>Your Order (<span id="total">0</span>)</h3>
+
+
+<div class="wheelCart" id="wheelCart" >
+
+
+  <ol id="wheel">
+
+
+
+  </ol>
+
+
+  
+</div>
+
+<div class="orderGroup">
+<p id ="orderTotal"> <span id="spanPrice"></span></p>
+
+<div class="carbon-neutral">
+  <img src="./assets/images/icon-carbon-neutral.svg" alt="" srcset="">
+  <p>This is a <b>carbon-neutral</b> delivery</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="emptywheelCart" id="emptywheelCart" >
+  <h3>Your Order (<span id="total">0</span>)</h3>
+
+
+  <img src="./assets/images/illustration-empty-cart.svg" alt="" srcset="">
+  
+    <p>Your added items will appear here</p>
+  </div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  <!-- Your Cart (Quantity) -->
+  <!-- Your added items will appear here -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
